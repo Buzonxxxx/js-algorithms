@@ -21,7 +21,7 @@ const print = (str, n) => {
       return ans;
     }
   }
+  return undefined;
 };
 
 console.log(print('abcdefglkjhgfd', 2));
-

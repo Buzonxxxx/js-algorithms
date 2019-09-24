@@ -23,7 +23,7 @@ const same = (arr1, arr2) => {
     if (!result[arr2[i]]) {
       result[arr2[i]] = 1;
     } else {
-      result[arr2[i]] = result[arr2[i]] + 1;
+      result[arr2[i]] += 1;
     }
   }
   for (let i = 0; i < arr1.length; i++) {

@@ -30,7 +30,7 @@ const charCount2 = (str) => {
       if (!result[char]) {
         result[char] = 1;
       } else {
-        result[char] = result[char] + 1;
+        result[char] += 1;
       }
     }
   }

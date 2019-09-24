@@ -26,7 +26,7 @@ const findLongestSubstring = (str) => {
   }
   let start = 0; let currentLength = 0; let maxLength = 0; const
     seen = {};
-  for (i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length; i++) {
     if (seen[str[i]]) {
       start = Math.max(start, seen[str[i]]);
     }

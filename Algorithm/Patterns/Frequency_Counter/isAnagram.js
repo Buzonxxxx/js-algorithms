@@ -20,7 +20,7 @@ const anagram = (str1, str2) => {
     if (!charCount[str1[i]]) {
       charCount[str1[i]] = 1;
     } else {
-      charCount[str1[i]] = charCount[str1[i]] + 1;
+      charCount[str1[i]] += 1;
     }
   }
   for (let i = 0; i < str2.length; i++) {
@@ -28,7 +28,7 @@ const anagram = (str1, str2) => {
       return false;
     }
 
-    charCount[str2[i]] = charCount[str2[i]] - 1;
+    charCount[str2[i]] -= 1;
   }
   return true;
 };

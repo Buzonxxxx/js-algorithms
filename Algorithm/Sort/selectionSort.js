@@ -6,25 +6,25 @@
 
 // loop後找到最小的, 放到最前面
 
-const selectSort = arr => {
-  for(i = 0; i < arr.length; i++){
+const selectSort = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
     let minIndex = i;
     // find minimum value's index
-    for(j = i + 1; j < arr.length; j++){
-      if(arr[j] < arr[minIndex]){
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[j] < arr[minIndex]) {
         minIndex = j;
-      } 
+      }
     }
-    if(i !== minIndex) {
+    if (i !== minIndex) {
       // swap
-      let temp = arr[minIndex];
+      const temp = arr[minIndex];
       arr[minIndex] = arr[i];
       arr[i] = temp;
     }
   }
   return arr;
-}
+};
 
-console.log(selectSort([3,2,5,6,3]))
+console.log(selectSort([3, 2, 5, 6, 3]));
 
 // O(n^2)

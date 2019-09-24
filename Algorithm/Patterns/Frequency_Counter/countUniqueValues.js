@@ -18,7 +18,7 @@ const countUniqueValues1 = (arr) => {
     if (!result[arr[i]]) {
       result[arr[i]] = 1;
     } else {
-      result[arr[i]] = result[arr[i]] + 1;
+      result[arr[i]] += 1;
     }
   }
   console.log(result);
@@ -31,5 +31,5 @@ const countUniqueValues2 = (arr) => {
   //  console.log([...set])
   return set.size;
 };
-// console.log(countUniqueValues1([1,1,1,2,2,3,4,5,6,7,7]))
-// console.log(countUniqueValues2([1,1,1,2,2,3,4,5,6,7,7]))
+console.log(countUniqueValues1([1, 1, 1, 2, 2, 3, 4, 5, 6, 7, 7]));
+console.log(countUniqueValues2([1, 1, 1, 2, 2, 3, 4, 5, 6, 7, 7]));

@@ -5,7 +5,7 @@ const numJewelsInStones = (J, S) => {
     if (!result[S[i]]) {
       result[S[i]] = 1;
     } else {
-      result[S[i]] = result[S[i]] + 1;
+      result[S[i]] += 1;
     }
   }
   let sum = 0;
