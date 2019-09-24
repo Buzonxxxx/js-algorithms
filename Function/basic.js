@@ -4,11 +4,11 @@
 
 // factorial 練習改用遞迴寫
 
-const factorial = num => {
-	sum = 1
-	for (let i = 1; i <= num; i++) {
-		sum *= i;
-	}
-	return sum
-}
+const factorial = (num) => {
+  sum = 1;
+  for (let i = 1; i <= num; i++) {
+    sum *= i;
+  }
+  return sum;
+};
 console.log(factorial(10));

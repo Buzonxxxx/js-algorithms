@@ -1,14 +1,13 @@
-//Primitives and objects
-let age = 27
+// Primitives and objects
+const age = 27;
 const obj = {
   name: 'Louis',
-  city: 'Lisbon'
-}
-function change(a, b)
-{
+  city: 'Lisbon',
+};
+function change(a, b) {
   a = 30,
-  b.city = 'San Francisco'
+  b.city = 'San Francisco';
 }
-change(age, obj)
-console.log(age) // Primitives: call by value
-console.log(obj.city) // Object:  call by reference
+change(age, obj);
+console.log(age); // Primitives: call by value
+console.log(obj.city); // Object:  call by reference

@@ -4,9 +4,9 @@ class Comment {
     this.children = children;
   }
 
-  *[Symbol.iterator]() {
+  * [Symbol.iterator]() {
     yield this.content;
-    for (let child of this.children) {
+    for (const child of this.children) {
       yield* child;
     }
   }
@@ -15,14 +15,14 @@ class Comment {
 const children = [
   new Comment('good comment', []),
   new Comment('bad comment', []),
-  new Comment('meh',[])
-]
+  new Comment('meh', []),
+];
 
 const tree = new Comment('Great post!', children);
 console.log(tree);
 
 const values = [];
-for (let value of tree) {
+for (const value of tree) {
   values.push(value);
 }
 

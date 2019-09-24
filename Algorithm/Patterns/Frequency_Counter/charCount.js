@@ -1,8 +1,8 @@
 /*
  * 1.
  * i.g. "hello" => {h:1, e:1, l:2, o:1}
- * 
- * 
+ *
+ *
  * loop over the string for each char
  * handle uppperCase and lowerCase char by toLowerCase()
  * filter out non-number/letter char by regexp
@@ -11,21 +11,21 @@
  * return obj
  */
 
-// const charCount1 = str => {
-// 	let result = {};
-//   for(let char of str){
-// 		char = char.toLowerCase();
-//     if(/[a-z0-9]/.test(char)) {
-//       char in result? result[char] + 1 : result[char] = 1;	
-//     }
-//   }
-// 	return result;
-// }
+const charCount1 = (str) => {
+  const result = {};
+  for (let char of str) {
+    char = char.toLowerCase();
+    if (/[a-z0-9]/.test(char)) {
+      char in result ? result[char] + 1 : result[char] = 1;
+    }
+  }
+  return result;
+};
 
-const charCount2 = str => {
+const charCount2 = (str) => {
   const result = {};
   for (let i = 0; i < str.length; i++) {
-    let char = str[i].toLowerCase();
+    const char = str[i].toLowerCase();
     if (/[a-z0-9]/.test(char)) {
       if (!result[char]) {
         result[char] = 1;
@@ -35,6 +35,6 @@ const charCount2 = str => {
     }
   }
   return result;
-}
-console.log(charCount1("Hello, World!!!"))
-console.log(charCount2("Hello, World!!!"))
+};
+console.log(charCount1('Hello, World!!!'));
+console.log(charCount2('Hello, World!!!'));

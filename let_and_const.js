@@ -4,7 +4,7 @@ var is function scope
 */
 
 // let => block scope
-let i = 23;
+const i = 23;
 for (let i = 0; i < 5; i++) {
   console.log(i);
 }

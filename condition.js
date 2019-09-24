@@ -1,18 +1,18 @@
 // switch
-const job = "teacher";
+const job = 'teacher';
 
 switch (job) {
-  case "teacher":
-    console.log("John teaches kids.");
+  case 'teacher':
+    console.log('John teaches kids.');
     break;
-  case "driver":
-    console.log("John drives a cab in Lisbon.");
+  case 'driver':
+    console.log('John drives a cab in Lisbon.');
     break;
-  case "cop":
-    console.log("John helps fight crime.");
+  case 'cop':
+    console.log('John helps fight crime.');
     break;
   default:
-    console.log("John does something else");
+    console.log('John does something else');
 }
 
 // while
@@ -23,8 +23,8 @@ while (num <= 3) {
 }
 
 // do while
-let x = -3
+let x = -3;
 do {
-  console.log(x)
-  x++
+  console.log(x);
+  x++;
 } while (x <= 3);
