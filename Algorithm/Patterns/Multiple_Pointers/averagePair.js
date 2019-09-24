@@ -8,6 +8,7 @@
  * 2. if pair average = target, return true
  * 3. if pair average < target, left++
  * 4. if pair average > target, right--
+ * 5. else return false
  */
 
 const averagePair = (arr, target) => {

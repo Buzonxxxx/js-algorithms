@@ -44,7 +44,7 @@ class SinglyLinkedList {
       // update tail
       this.tail = newNode;
     }
-    this.length++;
+    this.length += 1;
     return this;
   }
 
@@ -60,7 +60,7 @@ class SinglyLinkedList {
     // set new tail
     this.tail = newTail;
     this.tail.next = null;
-    this.length--;
+    this.length -= 1;
     if (this.length === 0) {
       this.head = null;
       this.tail = null;
@@ -72,7 +72,7 @@ class SinglyLinkedList {
     if (!this.head) return undefined;
     const currentHead = this.head;
     this.head = currentHead.next;
-    this.length--;
+    this.length -= 1;
     if (this.length === 0) {
       this.tail = null;
     }
@@ -88,7 +88,7 @@ class SinglyLinkedList {
       newNode.next = this.head;
       this.head = newNode;
     }
-    this.length++;
+    this.length += 1;
     return this;
   }
 
@@ -98,7 +98,7 @@ class SinglyLinkedList {
     let current = this.head;
     while (counter !== index) {
       current = current.next;
-      counter++;
+      counter += 1;
     }
     return current;
   }
@@ -122,7 +122,7 @@ class SinglyLinkedList {
     const temp = prev.next;
     prev.next = newNode;
     newNode.next = temp;
-    this.length++;
+    this.length += 1;
     return true;
   }
 
@@ -134,7 +134,7 @@ class SinglyLinkedList {
     const previousNode = this.get(index - 1);
     const removed = previousNode.next;
     previousNode.next = removed.next;
-    this.length--;
+    this.length -= 1;
     return removed;
   }
 
@@ -151,7 +151,7 @@ class SinglyLinkedList {
     // 13 <- 27
     // 13 <- 27 <- 32
     // 13 <- 27 <- 32 <- 71
-    for (let i = 0; i < this.length; i++) {
+    for (let i = 0; i < this.length; i += 1) {
       // node: 13
       next = node.next; // next: 27
       node.next = prev; // node.next: null
