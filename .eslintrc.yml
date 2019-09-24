@@ -11,8 +11,12 @@ globals:
 parserOptions:
   ecmaVersion: 2018
 rules: 
-  no-console: 0
+  no-console: "off"
   max-classes-per-file: [2, 5]
   no-underscore-dangle: "off"
   no-plusplus: [error, {allowForLoopAfterthoughts: true}]
+  max-len: "off"
+  no-restricted-syntax: "off"
+  no-unused-expressions: "off"
+  # consistent-return: "off"
 
