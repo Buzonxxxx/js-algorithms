@@ -1,6 +1,10 @@
+/* eslint-disable no-var */
+/* eslint-disable vars-on-top */
+/* eslint-disable no-shadow */
+
 /*
-let and const are block scope
-var is function scope
+* let and const are block scope
+* var is function scope
 */
 
 // let => block scope
@@ -12,7 +16,7 @@ console.log(i);
 
 // var function scope
 var j = 23;
-for (var j = 0; j < 5; j++) {
+for (j = 0; j < 5; j++) {
   console.log(j);
 }
 console.log(j);
