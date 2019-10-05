@@ -6,7 +6,6 @@
  * print(str, 3) => 'abcba'
  * print(str, 4) => 'abcdcba'
  *
- *
  */
 
 const print = (str, n) => {
@@ -14,6 +13,7 @@ const print = (str, n) => {
   for (let i = 0; i < n; i++) {
     ans += str[i];
     if (i === n - 1) {
+      i -= 1;
       while (i >= 0) {
         ans += str[i];
         i -= 1;

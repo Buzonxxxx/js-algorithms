@@ -44,6 +44,7 @@ class SinglyLinkedList {
       // update tail
       this.tail = newNode;
     }
+    // update length
     this.length += 1;
     return this;
   }

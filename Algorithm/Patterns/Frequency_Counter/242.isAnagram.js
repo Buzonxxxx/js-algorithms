@@ -27,9 +27,9 @@ const anagram = (str1, str2) => {
     if (!charCount[str2[i]]) {
       return false;
     }
-
     charCount[str2[i]] -= 1;
   }
+  console.log(charCount);
   return true;
 };
 console.log(anagram('anagrams', 'nagarams'));
