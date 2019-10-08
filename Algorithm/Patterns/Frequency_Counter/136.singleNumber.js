@@ -10,7 +10,7 @@
  * loop array and put element and count in object : [1,1,2,3] => {'1': 2, '2': 1, '3': 1}
  */
 
-const countUniqueValues1 = (arr) => {
+const countUniqueValues = (arr) => {
   const result = {};
   for (let i = 0; i < arr.length; i++) {
     if (!result[arr[i]]) {
@@ -27,5 +27,5 @@ const countUniqueValues1 = (arr) => {
   return undefined;
 };
 
-console.log(countUniqueValues1([1, 1, 1, 2, 2, 3, 4, 5, 6, 7, 7]));
-console.log(countUniqueValues1([2, 2, 1]));
+console.log(countUniqueValues([1, 1, 1, 2, 2, 3, 4, 4, 4, 7, 7]));
+console.log(countUniqueValues([2, 2, 1]));

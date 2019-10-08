@@ -17,4 +17,4 @@ const reverse = (x) => {
 };
 
 console.log(reverse(-2147483648));
-console.log(reverse(1233500));
+console.log(reverse(-1233500));
