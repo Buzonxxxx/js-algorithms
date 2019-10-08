@@ -8,19 +8,17 @@
 
 const areThereDuplicates = (...args) => {
   const result = {};
-  args.forEach((el) => {
-    if (!result[el]) {
-      result[el] = 1;
+  for (let i = 0; i < args.length; i++) {
+    if (!result[args[i]]) {
+      result[args[i]] = 1;
     } else {
-      result[el] += 1;
+      result[args[i]] += 1;
     }
-  });
-  // no duplicate
-  if (Object.keys(result).length === args.length) {
-    return false;
   }
-  // has duplicate
-  return true;
+  // has dup
+  if (Object.keys(result).length !== args.length) return true;
+  // no dup
+  return false;
 };
 
 console.log(areThereDuplicates(1, 2, 3)); // false

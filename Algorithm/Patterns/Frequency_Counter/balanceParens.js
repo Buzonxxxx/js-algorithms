@@ -2,20 +2,7 @@
 // interview question
 // parentheses are balance or not?
 
-// [reduce]
-const balanceParens = (string) => !string.split('').reduce((previous, char) => {
-  if (char === '(') {
-    previous += 1;
-  }
-  if (char === ')') {
-    previous -= 1;
-  }
-  return previous;
-}, 0);
-console.log(balanceParens(')((((((())))))'));
-
-// [frequencty counter]
-const balanceParens2 = (string) => {
+const balanceParens = (string) => {
   const arr = string.split('');
   const result = {};
   for (let i = 0; i < arr.length; i++) {
@@ -30,4 +17,4 @@ const balanceParens2 = (string) => {
   return false;
 };
 
-console.log(balanceParens2(')((((((())))))'));
+console.log(balanceParens(')((((((())))))'));

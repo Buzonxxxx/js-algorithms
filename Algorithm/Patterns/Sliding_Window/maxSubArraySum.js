@@ -10,6 +10,7 @@
  * validate input
  * sum to n and assign to tempSum
  * update maxSum
+ *
  * loop from n, add right element, minus left element, update maxSum
  *
  */
@@ -31,5 +32,5 @@ const maxSubArraySum = (arr, n) => {
   return maxSum;
 };
 console.log(maxSubArraySum([1, 2, 5, 2, 9, 1, 5], 2)); // 11
-console.log(maxSubArraySum([1, 2, 5, 2, 8, 1, 5], 3)); // 15
+// console.log(maxSubArraySum([1, 2, 5, 2, 8, 1, 5], 3)); // 15
 // O(n)

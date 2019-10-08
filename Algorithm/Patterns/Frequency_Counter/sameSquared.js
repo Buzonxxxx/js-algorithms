@@ -30,8 +30,7 @@ const same = (arr1, arr2) => {
     if (!result[arr1[i] ** 2]) {
       return false;
     }
-
-    result[arr1[i] ** 2] = result[arr1[i] ** 2] - 1;
+    result[arr1[i] ** 2] -= 1;
   }
   return true;
 };
