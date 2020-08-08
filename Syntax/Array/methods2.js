@@ -1,5 +1,5 @@
 // 找array內符合元素
-const arr = [1, 2, 3, 4, 4, 5];
+const arr = [ 1, 2, 3, 4, 4, 5 ];
 
 // filter 有符合的回array, 沒符合的回空array
 console.log(arr.filter((num) => num > 3));
@@ -16,8 +16,13 @@ console.log(arr.some((num) => num > 3));
 // every 全部符合才回true
 console.log(arr.every((num) => num > 3));
 
-// includes, 找到回true, 沒找到回false
-console.log(arr.includes(3));
-
 // indexOf, 找到回index, 沒找到回-1
-console.log(arr.indexOf(0), arr.indexOf(3));
+const ingrediants = [ 'water', 'corn', 'flour', 'cheese', 'sugar', 'shrimp', 'butter' ];
+console.log(ingrediants.indexOf('water'));
+console.log(ingrediants.indexOf('corn'));
+console.log(ingrediants.indexOf('cheese', 5)); // from Index 5
+console.log(ingrediants.indexOf('cheese', 1)); // from Index 1
+
+// includes, return boolean
+console.log(arr.includes(0));
+console.log(arr.includes(3));

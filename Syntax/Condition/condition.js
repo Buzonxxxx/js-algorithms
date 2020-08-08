@@ -1,6 +1,5 @@
 // switch
 const job = 'teacher';
-
 switch (job) {
 	case 'teacher':
 		console.log('John teaches kids.');
@@ -15,16 +14,11 @@ switch (job) {
 		console.log('John does something else');
 }
 
-// while
-let num = -3;
-while (num <= 3) {
-	console.log(num);
-	num += 1;
-}
+// logic operator order: 先! 再 && 再 ||
+const x = 7;
+const result = x == 7 || (x === 3 && x > 10); // 先 && 再 ||
+console.log(result);
 
-// do while
-let x = -3;
-do {
-	console.log(x);
-	x += 1;
-} while (x <= 3);
+// tenary operator
+const num = 7;
+num === 7 ? console.log('lucky!') : console.log('bad!');
