@@ -10,13 +10,13 @@
 // let => block scope
 const i = 23;
 for (let i = 0; i < 5; i++) {
-  console.log(i);
+	console.log(i);
 }
 console.log(i);
 
 // var function scope
 var j = 23;
 for (j = 0; j < 5; j++) {
-  console.log(j);
+	console.log(j);
 }
 console.log(j);

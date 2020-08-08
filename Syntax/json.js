@@ -2,8 +2,8 @@
 const fs = require('fs');
 
 const originalNote = {
-  title: 'Some title',
-  body: 'Some body',
+	title: 'Some title',
+	body: 'Some body'
 };
 // obj to string
 const originalNoteString = JSON.stringify(originalNote);
