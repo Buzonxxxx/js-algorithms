@@ -12,9 +12,9 @@ console.log(person1['name']); // [] 裡面要放string
 
 // Object.create
 const personPortal = {
-  calculateAge() {
-    return (2016 - this.yearOfBirth);
-  },
+	calculateAge() {
+		return 2016 - this.yearOfBirth;
+	}
 };
 
 const John = Object.create(personPortal);

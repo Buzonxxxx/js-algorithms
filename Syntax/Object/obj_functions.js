@@ -1,7 +1,7 @@
 const obj = {
-  a: 'one',
-  b: 'two',
-  c: 'three',
+	a: 'one',
+	b: 'two',
+	c: 'three'
 };
 
 // put keys, values in array
@@ -18,7 +18,7 @@ console.log(Object.prototype.hasOwnProperty.call(obj, 'a'));
 
 const entries = Object.entries(obj);
 for (const entry of entries) {
-  console.log(`key: ${entry[0]}, value: ${entry[1]}`);
+	console.log(`key: ${entry[0]}, value: ${entry[1]}`);
 }
 
 // Object.assign(target, ...sources);
