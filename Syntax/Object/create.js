@@ -1,14 +1,14 @@
-// Create object
+// 先用dot notation, 不行才用square brackets[]
+const me = {}; // or const person1 = new Object();
+me.name = 'Louis';
+me['my cat'] = 'cutie';
+me[100] = 'one hundred';
+console.log(me);
+console.log(me.name); // key = variable
+console.log(me['my cat']); // key = string
+console.log(me[100]); // 100 was converted to '100' in key
 
-// type 1
-const person1 = {}; // or const person1 = new Object();
-person1.name = 'Louis';
-person1.age = 34;
-person1.city = 'taipei';
-
-console.log(person1);
-// eslint-disable-next-line dot-notation
-console.log(person1['name']); // [] 裡面要放string
+console.log('==========');
 
 // Object.create
 const personPortal = {
